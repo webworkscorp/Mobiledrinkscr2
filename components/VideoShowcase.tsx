@@ -31,11 +31,11 @@ const VideoShowcase: React.FC = () => {
               style={{ filter: 'grayscale(0.1) brightness(0.8) contrast(1.1)' }}
             >
               <source 
-                src="https://mqajxigehitkgdtepqzi.supabase.co/storage/v1/object/public/Video%20surf/31546ca9-f140-489c-9b18-eeebf1852ddd.mov" 
+                src="https://www.image2url.com/r2/default/videos/1784076139465-6d540554-c411-4a49-89ea-671b3fcfa43b.mov" 
                 type="video/quicktime" 
               />
                <source 
-                src="https://mqajxigehitkgdtepqzi.supabase.co/storage/v1/object/public/Video%20surf/31546ca9-f140-489c-9b18-eeebf1852ddd.mov" 
+                src="https://www.image2url.com/r2/default/videos/1784076139465-6d540554-c411-4a49-89ea-671b3fcfa43b.mov" 
                 type="video/mp4" 
               />
             </video>
@@ -62,11 +62,11 @@ const VideoShowcase: React.FC = () => {
               style={{ filter: 'grayscale(0.1) brightness(0.8) contrast(1.1)' }}
             >
                <source 
-                src="https://mqajxigehitkgdtepqzi.supabase.co/storage/v1/object/public/Video%20surf/13d0e21e-3ae0-41fd-8e03-de19710e2cc4%20(1).mov" 
+                src="https://www.image2url.com/r2/default/videos/1784075823906-d00da0c5-63e6-4c7f-b1b4-bcd11ab0198f.mov" 
                 type="video/quicktime" 
               />
               <source 
-                src="https://mqajxigehitkgdtepqzi.supabase.co/storage/v1/object/public/Video%20surf/13d0e21e-3ae0-41fd-8e03-de19710e2cc4%20(1).mov" 
+                src="https://www.image2url.com/r2/default/videos/1784075823906-d00da0c5-63e6-4c7f-b1b4-bcd11ab0198f.mov" 
                 type="video/mp4" 
               />
             </video>
