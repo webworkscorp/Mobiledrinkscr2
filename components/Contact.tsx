@@ -2,9 +2,11 @@
 import React from 'react';
 import { BUSINESS } from '../constants.ts';
 import { useLanguage } from '../context/LanguageContext.tsx';
+import { usePrivacyModal } from '../context/PrivacyModalContext.tsx';
 
 const Contact: React.FC = () => {
   const { content } = useLanguage();
+  const { openModal } = usePrivacyModal();
 
   return (
     <footer id="contacto" className="bg-[#000d1a] pt-16 pb-12 px-6 border-t border-[#002147]/50">
@@ -81,10 +83,17 @@ const Contact: React.FC = () => {
           />
         </div>
 
-        <div className="pt-10 border-t border-white/5 text-center">
+        <div className="pt-10 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-center">
           <p className="text-gray-600 text-[9px] uppercase tracking-[0.3em]">
             © {new Date().getFullYear()} {content.contact.copyright}
           </p>
+          <button
+            type="button"
+            onClick={(e) => openModal(e.currentTarget)}
+            className="text-gray-500 hover:text-[#C5A021] text-xs underline underline-offset-4 transition-colors font-medium focus:outline-none focus:ring-1 focus:ring-[#C5A021] rounded px-1"
+          >
+            Política de Privacidad
+          </button>
         </div>
       </div>
     </footer>

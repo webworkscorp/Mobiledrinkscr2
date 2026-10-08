@@ -7,15 +7,18 @@ import About from './components/About.tsx';
 import Contact from './components/Contact.tsx';
 import BookingForm from './components/BookingForm.tsx';
 import VideoShowcase from './components/VideoShowcase.tsx';
+import PrivacyPolicyModal from './components/PrivacyPolicyModal.tsx';
 import { useLanguage } from './context/LanguageContext.tsx';
+import { PrivacyModalProvider } from './context/PrivacyModalContext.tsx';
 
 const App: React.FC = () => {
   const { content } = useLanguage();
 
   return (
-    <div className="min-h-screen bg-black font-sans">
-      <Navbar />
-      <main>
+    <PrivacyModalProvider>
+      <div className="min-h-screen bg-black font-sans">
+        <Navbar />
+        <main>
         <Hero />
         
         {/* Sección de Credenciales - Clean Minimal (Sin Bordes, Fondo Azul Oscuro) */}
@@ -107,7 +110,9 @@ const App: React.FC = () => {
 
         <Contact />
       </main>
+      <PrivacyPolicyModal />
     </div>
+  </PrivacyModalProvider>
   );
 };
 
